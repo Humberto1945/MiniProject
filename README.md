@@ -17,7 +17,7 @@ Open this up in andriod studio.
 Select the device manager and go through the proccess of setting up a new decvice to run the application
 For more info on how to set it up please visit [Andrio Studio](https://developer.android.com/studio/run/managing-avds)
 # H4 Useful links
-	[TensorImageUtils](http://localhost:63342/rcuxkxddwep02ec3n85yxluaf4ax9ogxx6m6h/MiniProject/pytorch_android_torchvision-1.9.0-javadoc.jar/org/pytorch/torchvision/TensorImageUtils.html)
+[TensorImageUtils](http://localhost:63342/rcuxkxddwep02ec3n85yxluaf4ax9ogxx6m6h/MiniProject/pytorch_android_torchvision-1.9.0-javadoc.jar/org/pytorch/torchvision/TensorImageUtils.html)
 	
 [Normailze Images](https://www.geeksforgeeks.org/how-to-normalize-images-in-pytorch/#:~:text=The%20mean%20and%20std%20of%20ImageNet%20are%3A%20mean,and%20use%20them%20to%20normalize%20the%20images.%20Python3)
 
