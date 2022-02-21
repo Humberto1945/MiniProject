@@ -8,7 +8,7 @@ import android.graphics.Bitmap;
 import android.os.Bundle;
 
 import org.pytorch.IValue;
-import org.pytorch.LiteModuleLoader;
+// import org.pytorch.LiteModuleLoader;
 import org.pytorch.MemoryFormat;
 import org.pytorch.Module;
 import org.pytorch.Tensor;
@@ -41,9 +41,11 @@ public class MainActivity extends AppCompatActivity {
          //try method to run through and get the image and pretrained model
          try{
              bitmap = BitmapFactory.decodeStream(getAssets().open("puppyImage.jpg"));
-             module = LiteModuleLoader.load(readingAsset(this, "model.pt"));
+             // Errors with loading LiteModuleLoader decided to go another route
+             // module = LiteModuleLoader.load(readingAsset(this, "model.ptl"));
+             module = Module.load(readingAsset(this,"model.ptl"));
          } catch (IOException e) {
-             e.printStackTrace();
+             // e.printStackTrace();
          }
          ImageView imageView = findViewById(R.id.imageView);
          imageView.setImageBitmap(bitmap);
@@ -58,7 +60,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Input output tensor transformation
-               final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(finalBitmap, TensorImageUtils.TORCHVISION_NORM_MEAN_RGB, TensorImageUtils.TORCHVISION_NORM_STD_RGB, MemoryFormat.CHANNELS_LAST);
+               final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(finalBitmap, TensorImageUtils.TORCHVISION_NORM_MEAN_RGB,
+                       TensorImageUtils.TORCHVISION_NORM_STD_RGB, MemoryFormat.CHANNELS_LAST);
                final Tensor outputTensor = finalModule.forward(IValue.from(inputTensor)).toTensor();
                 /*
                 TODO

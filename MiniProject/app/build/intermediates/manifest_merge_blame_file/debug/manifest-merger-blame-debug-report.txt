@@ -10,41 +10,45 @@
 9        android:targetSdkVersion="32" />
 9-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml
 10
-11    <application
-11-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:5:5-21:19
-12        android:allowBackup="true"
-12-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:6:9-35
-13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-13-->[androidx.core:core:1.5.0] C:\Users\titig\.gradle\caches\transforms-3\3097e1c5dd79a0661fe903d2c2778720\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
-14        android:debuggable="true"
-15        android:icon="@mipmap/ic_launcher"
-15-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:7:9-43
-16        android:label="@string/app_name"
-16-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:8:9-41
-17        android:roundIcon="@mipmap/ic_launcher_round"
-17-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:9:9-54
-18        android:supportsRtl="true"
-18-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:10:9-35
-19        android:testOnly="true"
-20        android:theme="@style/Theme.MiniProject" >
-20-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:11:9-49
-21        <activity
-21-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:12:9-20:20
-22            android:name="com.example.miniproject.MainActivity"
-22-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:13:13-41
-23            android:exported="true" >
-23-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:14:13-36
-24            <intent-filter>
-24-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:15:13-19:29
-25                <action android:name="android.intent.action.MAIN" />
-25-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:16:17-69
-25-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:16:25-66
-26
-27                <category android:name="android.intent.category.LAUNCHER" />
-27-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:18:17-77
-27-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:18:27-74
-28            </intent-filter>
-29        </activity>
-30    </application>
-31
-32</manifest>
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:4:5-79
+11-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:4:22-77
+12
+13    <application
+13-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:6:5-22:19
+14        android:allowBackup="true"
+14-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:7:9-35
+15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+15-->[androidx.core:core:1.5.0] C:\Users\titig\.gradle\caches\transforms-3\3097e1c5dd79a0661fe903d2c2778720\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
+16        android:debuggable="true"
+17        android:icon="@mipmap/ic_launcher"
+17-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:8:9-43
+18        android:label="@string/app_name"
+18-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:9:9-41
+19        android:roundIcon="@mipmap/ic_launcher_round"
+19-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:10:9-54
+20        android:supportsRtl="true"
+20-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:11:9-35
+21        android:testOnly="true"
+22        android:theme="@style/Theme.MiniProject" >
+22-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:12:9-49
+23        <activity
+23-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:13:9-21:20
+24            android:name="com.example.miniproject.MainActivity"
+24-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:14:13-41
+25            android:exported="true" >
+25-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:15:13-36
+26            <intent-filter>
+26-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:16:13-20:29
+27                <action android:name="android.intent.action.MAIN" />
+27-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:17:17-69
+27-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:17:25-66
+28
+29                <category android:name="android.intent.category.LAUNCHER" />
+29-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:19:17-77
+29-->C:\Users\titig\HOGP\MiniProject\MiniProject\app\src\main\AndroidManifest.xml:19:27-74
+30            </intent-filter>
+31        </activity>
+32    </application>
+33
+34</manifest>
