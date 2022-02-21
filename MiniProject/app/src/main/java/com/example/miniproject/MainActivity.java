@@ -60,15 +60,19 @@ public class MainActivity extends AppCompatActivity {
                 //Input output tensor transformation
                final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(finalBitmap, TensorImageUtils.TORCHVISION_NORM_MEAN_RGB, TensorImageUtils.TORCHVISION_NORM_STD_RGB, MemoryFormat.CHANNELS_LAST);
                final Tensor outputTensor = finalModule.forward(IValue.from(inputTensor)).toTensor();
-
-                final float[] scores = outputTensor.getDataAsFloatArray();
+                /*
+                TODO
+                Make it read from imageClassesFile and find the mean and std that way
+                Instead of using the other test class set
+                 */
+                final float[] tally = outputTensor.getDataAsFloatArray();
                 // searching for the index with maximum score
                 float maxScore = -Float.MAX_VALUE;
                 int maxScoreIdx = -1;
                 //finding which image best fits the inputed image
-                for (int i = 0; i < scores.length; i++) {
-                    if (scores[i] > maxScore) {
-                        maxScore = scores[i];
+                for (int i = 0; i < tally.length; i++) {
+                    if (tally[i] > maxScore) {
+                        maxScore = tally[i];
                         maxScoreIdx = i;
                     }
                 }
@@ -78,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
+    // helper method to read the file paths
     public static String readingAsset(Context context, String assetName) throws IOException {
         File file = new File(context.getFilesDir(), assetName);
         if (file.exists() && file.length() > 0) {
