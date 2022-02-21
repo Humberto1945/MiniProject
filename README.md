@@ -1,5 +1,6 @@
 # MiniProject
-Mini project repo
+This repo captures the basics of how to start making a machine learning application on andrio studio.
+
 # H1 Getting Started
 First you want to make sure that you have the necessary tools that you will need to run this project.
 In your preferred CL verify that you have python installed by running `python`
