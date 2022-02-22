@@ -1849,6 +1849,7 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
+id confidence
 id confirm_button
 id container
 id content
@@ -2064,6 +2065,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id select
 id select_dialog_listview
 id selected
 id selection_type
@@ -2362,6 +2364,7 @@ string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string guess
+string here_is_your_cofidence
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -2428,6 +2431,7 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string search_menu_title
+string select
 string status_bar_notification_info_overflow
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

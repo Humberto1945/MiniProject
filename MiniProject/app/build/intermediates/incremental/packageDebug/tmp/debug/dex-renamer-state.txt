@@ -1,4 +1,4 @@
-#Mon Feb 21 19:18:18 EST 2022
+#Mon Feb 21 23:44:14 EST 2022
 base.2=C\:\\Users\\titig\\HOGP\\MiniProject\\MiniProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\15\\classes.dex
 path.2=15/classes.dex
 base.1=C\:\\Users\\titig\\HOGP\\MiniProject\\MiniProject\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex

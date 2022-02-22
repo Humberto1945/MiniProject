@@ -10,8 +10,10 @@
     <string name="app_name">MiniProject</string>
     <string name="detect">DETECT</string>
     <string name="guess">guess</string>
+    <string name="here_is_your_cofidence">Here is your cofidence</string>
     <string name="let_me_take_a_guess">Let me take a guess</string>
     <string name="load_image">LOAD IMAGE</string>
+    <string name="select">Select</string>
     <style name="Theme.MiniProject" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>

@@ -4,4 +4,6 @@
     <string name="load_image">LOAD IMAGE</string>
     <string name="guess">guess</string>
     <string name="let_me_take_a_guess">Let me take a guess</string>
+    <string name="select">Select</string>
+    <string name="here_is_your_cofidence">Here is your cofidence</string>
 </resources>
