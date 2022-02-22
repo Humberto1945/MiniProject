@@ -2,7 +2,6 @@ package com.example.miniproject;
 
 public class ImageClasses {
     public static final String[] ImageClassesNet = new String[]{
-            /*
             "tench, Tinca tinca",
             "goldfish, Carassius auratus",
             "great white shark, white shark, man-eater, man-eating shark, Carcharodon carcharias",
@@ -1003,6 +1002,6 @@ public class ImageClasses {
             "bolete",
             "ear, spike, capitulum",
             "toilet tissue, toilet paper, bathroom tissue"
-            */
+
     };
 }

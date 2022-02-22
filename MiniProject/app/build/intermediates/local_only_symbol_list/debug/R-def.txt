@@ -18,5 +18,6 @@ mipmap ic_launcher_round
 string app_name
 string detect
 string guess
+string let_me_take_a_guess
 string load_image
 style Theme.MiniProject

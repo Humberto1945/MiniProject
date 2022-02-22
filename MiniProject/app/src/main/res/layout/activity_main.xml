@@ -28,7 +28,7 @@
         android:layout_marginStart="147dp"
         android:layout_marginTop="144dp"
         android:layout_marginEnd="170dp"
-        android:text="@string/load_image"
+        android:text="@string/let_me_take_a_guess"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.465"
         app:layout_constraintStart_toStartOf="parent"

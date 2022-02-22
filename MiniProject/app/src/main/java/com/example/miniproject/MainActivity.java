@@ -49,10 +49,9 @@ public class MainActivity extends AppCompatActivity {
          }
          ImageView imageView = findViewById(R.id.imageView);
          imageView.setImageBitmap(bitmap);
-         // initalize button to load and transfer the image to the view
+         // initialize button to load and transfer the image to the view
 
         Button button = findViewById(R.id.loadImage);
-        //Creating a second set of bitmap and module to allow for usage in onClick
         Bitmap finalBitmap = bitmap;
         Module finalModule = module;
         button.setOnClickListener(new View.OnClickListener(){
@@ -60,8 +59,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //Input output tensor transformation
-               final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(finalBitmap, TensorImageUtils.TORCHVISION_NORM_MEAN_RGB,
+              /* final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(finalBitmap, TensorImageUtils.TORCHVISION_NORM_MEAN_RGB,
                        TensorImageUtils.TORCHVISION_NORM_STD_RGB, MemoryFormat.CHANNELS_LAST);
+
+               */
+                final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(finalBitmap,
+                        TensorImageUtils.TORCHVISION_NORM_MEAN_RGB, TensorImageUtils.TORCHVISION_NORM_STD_RGB);
                final Tensor outputTensor = finalModule.forward(IValue.from(inputTensor)).toTensor();
                 /*
                 TODO
