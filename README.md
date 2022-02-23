@@ -5,7 +5,7 @@ This repo captures the basics of how to start making a machine learning clasific
 First you want to make sure that you have the necessary tools that you will need to run this project.
 In your preferred CL verify that you have python installed by running `python`
 [Install Python](https://www.python.org/downloads/)
-If you have it installed it should say the version number. Example "Python 3.10.2. This will also put you in python exe where you can run
+If you have it installed it should say the version number. Example "Python 3.10.2". This will also put you in python exe where you can run
 python commmands.
 # Installing pytorch
 pytorch can be installed many ways.
