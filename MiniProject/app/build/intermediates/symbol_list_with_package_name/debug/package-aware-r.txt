@@ -1849,7 +1849,6 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id collapseActionView
-id confidence
 id confirm_button
 id container
 id content

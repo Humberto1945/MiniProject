@@ -17,6 +17,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import android.content.Context;
 import android.provider.MediaStore;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
     Uri selectedImage;
     Bitmap imageBitmap;
     Module moduleResNet;
+    int imageSize = 224;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,14 +54,16 @@ public class MainActivity extends AppCompatActivity {
         guessButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(imageBitmap,
+                //resize the bitmap
+                Bitmap resize = Bitmap.createScaledBitmap(imageBitmap, imageSize,imageSize, false);
+                final Tensor inputTensor = TensorImageUtils.bitmapToFloat32Tensor(resize,
                         TensorImageUtils.TORCHVISION_NORM_MEAN_RGB, TensorImageUtils.TORCHVISION_NORM_STD_RGB);
 
                 final Tensor outputTensor = moduleResNet.forward(IValue.from(inputTensor)).toTensor();
                 final float[] tally = outputTensor.getDataAsFloatArray( );
 
-                float maxScore = -Float.MAX_VALUE;
-                int maxScoreIdx = -1;
+                float maxScore = 0;
+                int maxScoreIdx = 0;
                 //finding which image best fits the inputted image
                 for (int i = 0; i < tally.length; i++) {
                     if (tally[i] > maxScore) {
@@ -67,9 +71,13 @@ public class MainActivity extends AppCompatActivity {
                         maxScoreIdx = i;
                     }
                 }
+                Log.d(Integer.toString(maxScoreIdx), "This is my max score");
+
+
                 String className = ImageClasses.ImageClassesNet[maxScoreIdx];
                 TextView guessTextView = findViewById(R.id.guess);
-                guessTextView.setText(className);
+                guessTextView.setText(String.valueOf(className));
+               // guessTextView.setText(className);
 
             }
         });
@@ -82,6 +90,7 @@ public class MainActivity extends AppCompatActivity {
             selectedImage = data.getData();
             imageView.setImageURI(selectedImage);
             try {
+                //Getting the bitmap image
                 imageBitmap = MediaStore.Images.Media.getBitmap(this.getContentResolver(),selectedImage);
             } catch (IOException e) {
                 e.printStackTrace();

@@ -63,18 +63,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/loadImage" />
 
-    <TextView
-        android:id="@+id/confidence"
-        android:layout_width="292dp"
-        android:layout_height="81dp"
-        android:layout_marginStart="39dp"
-        android:layout_marginTop="47dp"
-        android:layout_marginEnd="80dp"
-        android:layout_marginBottom="16dp"
-        android:text="@string/here_is_your_cofidence"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
