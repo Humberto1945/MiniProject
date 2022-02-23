@@ -1,5 +1,5 @@
 # MiniProject
-This repo captures the basics of how to start making a machine learning application on andrio studio.
+This repo captures the basics of how to start making a machine learning clasification application on andrio studio.
 
 # Getting Started
 First you want to make sure that you have the necessary tools that you will need to run this project.
