@@ -17,6 +17,12 @@ Open this up in andriod studio.
 #H4 Running the application
 Select the device manager and go through the proccess of setting up a new decvice to run the application
 For more info on how to set it up please visit [Andrio Studio](https://developer.android.com/studio/run/managing-avds)
+# Using the app
+There are two options on the app itself.
+The select button allows you to choose a picture from your gallery or goole photos.
+After you select your picture you must click on the button "guess".
+This will make the app try and make a prediction of what the image in the picture is. You can repeat these steps over and over and try and diffrent pictures!
+
 # Useful links
 [TensorImageUtils](http://localhost:63342/rcuxkxddwep02ec3n85yxluaf4ax9ogxx6m6h/MiniProject/pytorch_android_torchvision-1.9.0-javadoc.jar/org/pytorch/torchvision/TensorImageUtils.html)
 	
